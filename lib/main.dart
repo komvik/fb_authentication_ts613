@@ -1,3 +1,4 @@
+import 'package:fb_authentication_ts613/authentication_fifebase.dart';
 import 'package:fb_authentication_ts613/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -18,9 +19,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('TS611113'),
-        ),
+        body: AuthenticationFifebase(),
       ),
     );
   }
